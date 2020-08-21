@@ -1,0 +1,48 @@
+* {
+    font-family: Comic Sans MS, Arial, Helvetica;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: lightseagreen;
+    border: solid #1e1e1e;
+    margin: 10px 10px 5px 10px;
+    text-align: center;
+}
+
+header h1 {
+    padding: 4px;
+}
+
+section {
+    text-align: center;
+}
+
+div {
+    background-color: #D3D3D3;
+    border: solid #1e1e1e;
+    display: inline-block;
+    margin: 5px;
+    width: 300px;
+    color: black;
+}
+
+div:hover {
+    opacity: 0.50;
+}
+
+div img {
+    border-bottom: solid #1e1e1e;
+}
+
+div p {
+    padding-bottom: 5px;
+}
+
+footer {
+    background-color: lightseagreen;
+    border: solid #1e1e1e;
+    margin: 5px 10px 10px 10px;
+    text-align: center;
+}
