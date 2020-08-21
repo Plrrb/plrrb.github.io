@@ -1,5 +1,5 @@
 * {
-  font-family: Comic Sans MS, Arial, Helvetica;
+  font-family: "Cooper Black", Arial, Helvetica;
   margin: 0;
   padding: 0;
 }
@@ -30,4 +30,8 @@ main {
   border: solid #1e1e1e;
   text-align: center;
   width: 600px;
+}
+
+#info p {
+  padding: 0 10px 10px 10px;
 }
