@@ -1,0 +1,33 @@
+* {
+  font-family: Comic Sans MS, Arial, Helvetica;
+  margin: 0;
+  padding: 0;
+}
+
+header,
+footer {
+  background-color: lightseagreen;
+  border: solid #1e1e1e;
+  margin: 10px;
+  padding: 4px;
+  text-align: center;
+}
+
+section {
+  width: 606px;
+  margin: 0 auto 0 auto;
+}
+
+main {
+  border: solid #1e1e1e;
+  height: 600px;
+  width: 600px;
+}
+
+#info {
+  margin: 10px 0 0 0;
+  background-color: #D3D3D3;
+  border: solid #1e1e1e;
+  text-align: center;
+  width: 600px;
+}
