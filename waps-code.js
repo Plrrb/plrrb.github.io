@@ -36,7 +36,7 @@ var plant = {
 
   width: 295.5,
   height: 834,
-  speed: 0.4
+  speed: 0.8
 };
 
 var trebuchet = {
@@ -159,21 +159,21 @@ var trebuchetCode = function(x, y) {
     image(trebuchetProjectileImg, trebuchet.projectile.x[i] += trebuchet.projectile.Xtrajectory[i], trebuchet.projectile.y[i] += trebuchet.projectile.Ytrajectory[i] += 0.08, trebuchet.projectile.width, trebuchet.projectile.height);
 
     if (mouseIsPressed && mouseX < trebuchet.projectile.x[i] + trebuchet.projectile.width && mouseX > trebuchet.projectile.x[i] - trebuchet.projectile.width && mouseY < trebuchet.projectile.y[i] + trebuchet.projectile.height && mouseY > trebuchet.projectile.y[i] - trebuchet.projectile.height) {
-      trebuchet.projectile.x.splice(i, i + 1);
-      trebuchet.projectile.y.splice(i, i + 1);
-      trebuchet.projectile.Xtrajectory.splice(i, i + 1);
-      trebuchet.projectile.Ytrajectory.splice(i, i + 1);
+      trebuchet.projectile.x.splice(i, 1);
+      trebuchet.projectile.y.splice(i, 1);
+      trebuchet.projectile.Xtrajectory.splice(i, 1);
+      trebuchet.projectile.Ytrajectory.splice(i, 1);
     } else if (trebuchet.projectile.x[i] > plant.x - 40 && trebuchet.projectile.y[i] > plant.y / 3) {
       plant.y += trebuchet.projectile.damage;
-      trebuchet.projectile.x.splice(i, i + 1);
-      trebuchet.projectile.y.splice(i, i + 1);
-      trebuchet.projectile.Xtrajectory.splice(i, i + 1);
-      trebuchet.projectile.Ytrajectory.splice(i, i + 1);
+      trebuchet.projectile.x.splice(i, 1);
+      trebuchet.projectile.y.splice(i, 1);
+      trebuchet.projectile.Xtrajectory.splice(i, 1);
+      trebuchet.projectile.Ytrajectory.splice(i, 1);
     } else if (trebuchet.projectile.x[i] > width + 100 || trebuchet.projectile.y[i] > height + 100) {
-      trebuchet.projectile.x.splice(i, i + 1);
-      trebuchet.projectile.y.splice(i, i + 1);
-      trebuchet.projectile.Xtrajectory.splice(i, i + 1);
-      trebuchet.projectile.Ytrajectory.splice(i, i + 1);
+      trebuchet.projectile.x.splice(i, 1);
+      trebuchet.projectile.y.splice(i, 1);
+      trebuchet.projectile.Xtrajectory.splice(i, 1);
+      trebuchet.projectile.Ytrajectory.splice(i, 1);
     }
   }
 };
@@ -199,15 +199,15 @@ var heliCode = function(inputX) {
     image(heliProjectileImg, heli.projectile.x[i] += heli.projectile.speed, heli.projectile.y[i], heli.projectile.width, heli.projectile.height);
 
     if (mouseIsPressed && mouseX < heli.projectile.x[i] + heli.projectile.width && mouseX > heli.projectile.x[i] - heli.projectile.width && mouseY < heli.projectile.y[i] + heli.projectile.height && mouseY > heli.projectile.y[i] - heli.projectile.height) {
-      heli.projectile.x.splice(i, i + 1);
-      heli.projectile.y.splice(i, i + 1);
+      heli.projectile.x.splice(i, 1);
+      heli.projectile.y.splice(i, 1);
     } else if (heli.projectile.x[i] > plant.x - 50 && heli.projectile.y[i] > plant.y / 3) {
       plant.y += heli.projectile.damage;
-      heli.projectile.x.splice(i, i + 1);
-      heli.projectile.y.splice(i, i + 1);
+      heli.projectile.x.splice(i, 1);
+      heli.projectile.y.splice(i, 1);
     } else if (heli.projectile.x[i] > 600) {
-      heli.projectile.x.splice(i, i + 1);
-      heli.projectile.y.splice(i, i + 1);
+      heli.projectile.x.splice(i, 1);
+      heli.projectile.y.splice(i, 1);
     }
   }
 };
@@ -226,21 +226,21 @@ var asteroidCode = function() {
     image(asteroidImg, asteroid.x[i] += asteroid.Xtrajectory[i], asteroid.y[i] += asteroid.Ytrajectory[i], asteroid.width, asteroid.height);
 
     if (mouseIsPressed && mouseX < asteroid.x[i] + asteroid.width && mouseX > asteroid.x[i] - asteroid.width && mouseY < asteroid.y[i] + asteroid.height && mouseY > asteroid.y[i] - asteroid.height) {
-      asteroid.x.splice(i, i + 1);
-      asteroid.y.splice(i, i + 1);
-      asteroid.Xtrajectory.splice(i, i + 1);
-      asteroid.Ytrajectory.splice(i, i + 1);
+      asteroid.x.splice(i, 1);
+      asteroid.y.splice(i, 1);
+      asteroid.Xtrajectory.splice(i, 1);
+      asteroid.Ytrajectory.splice(i, 1);
     } else if (asteroid.x[i] > plant.x - 40 && asteroid.y[i] > plant.y / 3) {
       plant.y += asteroid.damage;
-      asteroid.x.splice(i, i + 1);
-      asteroid.y.splice(i, i + 1);
-      asteroid.Xtrajectory.splice(i, i + 1);
-      asteroid.Ytrajectory.splice(i, i + 1);
+      asteroid.x.splice(i, 1);
+      asteroid.y.splice(i, 1);
+      asteroid.Xtrajectory.splice(i, 1);
+      asteroid.Ytrajectory.splice(i, 1);
     } else if (asteroid.x[i] > width + 100 || asteroid.y[i] > height + 100) {
-      asteroid.x.splice(i, i + 1);
-      asteroid.y.splice(i, i + 1);
-      asteroid.Xtrajectory.splice(i, i + 1);
-      asteroid.Ytrajectory.splice(i, i + 1);
+      asteroid.x.splice(i, 1);
+      asteroid.y.splice(i, 1);
+      asteroid.Xtrajectory.splice(i, 1);
+      asteroid.Ytrajectory.splice(i, 1);
     }
   }
 };
