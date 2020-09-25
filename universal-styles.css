@@ -9,12 +9,5 @@ footer {
   background-color: lightseagreen;
   border: solid #1e1e1e;
   text-align: center;
-}
-
-header {
-  margin: 10px 10px 5px 10px;
-}
-
-footer {
-  margin: 5px 10px 10px 10px;
+  margin: 10px;
 }
