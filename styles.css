@@ -1,17 +1,20 @@
+/*
+  Made by Plrrb (https://github.com/Plrrb)
+  For my Website (https://plrrb.github.io/)
+  This is the CSS for the main page
+*/
+
 #games {
-    text-align: center;
     font-size: 20px;
+    text-align: center;
 }
 
 .game {
     background-color: #D3D3D3;
     border: solid #1e1e1e;
     display: inline-block;
+    margin: 5px;
     width: 300px;
-}
-
-.game:hover {
-    opacity: 0.50;
 }
 
 .game img {
@@ -22,10 +25,12 @@
     padding-bottom: 5px;
 }
 
-.game a:link {
-    text-decoration: none;
+.game:hover {
+    opacity: 0.50;
 }
 
+.game a:link,
 .game a:visited {
     color: black;
+    text-decoration: none;
 }

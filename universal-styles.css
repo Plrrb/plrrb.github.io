@@ -1,3 +1,11 @@
+/*
+  Made by Plrrb (https://github.com/Plrrb)
+  For my Website (https://plrrb.github.io/)
+  This is the CSS for all pages
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
 * {
   font-family: 'Overpass', sans-serif;
   margin: 0;
@@ -8,6 +16,33 @@ header,
 footer {
   background-color: lightseagreen;
   border: solid #1e1e1e;
+  margin: 10px 10px 5px 10px;
   text-align: center;
-  margin: 10px;
+}
+
+footer {
+  display: flex;
+  font-size: 20px;
+  margin: 5px 10px 5px 10px;
+}
+
+footer p {
+  margin: auto;
+}
+
+footer .spacer {
+  margin: 0;
+  padding: 5px;
+  width: 169.89px;
+  /*remember to change the width depending on the width of the .spacer with text*/
+}
+
+.spacer:hover {
+  text-decoration: underline;
+}
+
+.spacer a:link,
+.spacer a:visited {
+  color: black;
+  text-decoration: none;
 }
