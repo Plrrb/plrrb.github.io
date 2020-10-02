@@ -1,3 +1,9 @@
+/*
+  Made by Plrrb (https://github.com/Plrrb)
+  For my Website (https://plrrb.github.io/)
+  This is the JavaScript code for my game waps (ment to be used with the p5js library)
+*/
+
 function preload() {
   waterCan = loadImage("https://i.imgur.com/BrqwDSN.png");
   waterCanRotate = loadImage("https://i.imgur.com/VTkwWyA.png");
@@ -96,21 +102,21 @@ var asteroid = {
 var level = 0;
 
 var stages = [
-  function() {
+  function () {
     trebuchetCode(100, 520)
   },
-  function() {
+  function () {
     heliCode(100)
   },
-  function() {
+  function () {
     asteroidCode()
   },
-  function() {
+  function () {
     winCode();
   }
 ];
 
-var waterCode = function() {
+var waterCode = function () {
   if (mouseIsPressed) {
     water.x.push(mouseX + random(-8, 8));
     water.y.push(mouseY);
@@ -135,7 +141,7 @@ var waterCode = function() {
   }
 };
 
-var plantCode = function() {
+var plantCode = function () {
   fill(43, 179, 5);
   image(plantImg, plant.x, plant.y, plant.width, plant.height)
 
@@ -144,7 +150,7 @@ var plantCode = function() {
   }
 };
 
-var trebuchetCode = function(x, y) {
+var trebuchetCode = function (x, y) {
   image(groundImg, 300, 300, groundImg.width, groundImg.height);
 
   image(trebuchetImg, x, y, trebuchet.width, trebuchet.height);
@@ -178,7 +184,7 @@ var trebuchetCode = function(x, y) {
   }
 };
 
-var heliCode = function(inputX) {
+var heliCode = function (inputX) {
   image(airImg, 300, 300, airImg.width, airImg.height);
 
   image(heliImg, inputX += random(-0.3, 0.3), heli.y += heli.speed, heli.width, heli.height);
@@ -212,7 +218,7 @@ var heliCode = function(inputX) {
   }
 };
 
-var asteroidCode = function() {
+var asteroidCode = function () {
   image(spaceImg, 300, 300, spaceImg.width, spaceImg.height);
 
   if (random(0, 100) < 2) {
@@ -245,7 +251,7 @@ var asteroidCode = function() {
   }
 };
 
-var winCode = function() {
+var winCode = function () {
   image(winImg, 300, 300, winImg.width, winImg.height);
 
   textAlign(CENTER);
@@ -264,4 +270,5 @@ function draw() {
   stages[level]();
   plantCode();
   waterCode();
+
 }
