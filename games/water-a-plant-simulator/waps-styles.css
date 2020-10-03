@@ -13,10 +13,11 @@ main {
   border: solid #1e1e1e;
   height: 600px;
   width: 600px;
+  margin: 10px 0 10px 0;
 }
 
 #info {
-  margin: 10px 0 0 0;
+  margin: 5px 0 10px 0;
   background-color: #D3D3D3;
   border: solid #1e1e1e;
   text-align: center;
